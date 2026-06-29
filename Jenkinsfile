@@ -38,7 +38,7 @@ pipeline {
             }
         }
 
-        stage('Run Docker Container') {
+        stage('Run Docker Container') {  
             steps {
                 script {
                     sh """
