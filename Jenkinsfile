@@ -40,7 +40,7 @@ pipeline {
 
         stage('Run Docker Container') {
             steps {
-                script {
+                script { 
                     sh """
                         # Stop and remove any previous containers with the same app name to prevent conflicts
                         docker ps -q --filter "name=${APP_NAME}-main" | xargs -r docker stop
